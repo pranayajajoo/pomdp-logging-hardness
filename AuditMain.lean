@@ -1,0 +1,14 @@
+import PomdpLogging.MainTheorem
+import PomdpLogging.MemoryObstructions
+import PomdpLogging.Coarsening
+
+#print axioms PomdpLogging.main_theorem
+#print axioms PomdpLogging.actual_terminal_revealing
+#print axioms PomdpLogging.PositiveChannel.gram_matrix_formula
+#print axioms PomdpLogging.PositiveChannel.weightedGram_matrix_formula
+#print axioms PomdpLogging.reconstructs_full_dataset
+#print axioms PomdpLogging.no_physical_state_factorization
+#print axioms PomdpLogging.augmented_coverage_cost
+#print axioms PomdpLogging.no_fixed_suffix
+#print axioms PomdpLogging.PositiveChannel.gram_reconstruction
+#print axioms PomdpLogging.PositiveChannel.weightedGram_reconstruction

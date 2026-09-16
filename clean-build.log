@@ -1,0 +1,175 @@
+⚠ [8925/8973] Built PomdpLogging.FiniteProbability (16s)
+warning: PomdpLogging/FiniteProbability.lean:97:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8926/8973] Built PomdpLogging.OptimalTesting (14s)
+warning: PomdpLogging/OptimalTesting.lean:18:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: PomdpLogging/OptimalTesting.lean:31:9: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: PomdpLogging/OptimalTesting.lean:32:9: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8927/8973] Built PomdpLogging.Construction (14s)
+⚠ [8928/8973] Built PomdpLogging.MatrixBasics (14s)
+warning: PomdpLogging/MatrixBasics.lean:21:49: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, symmetricStochastic]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: PomdpLogging/MatrixBasics.lean:32:41: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: PomdpLogging/MatrixBasics.lean:32:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [8929/8973] Built PomdpLogging.MemoryDistribution (14s)
+✔ [8930/8973] Built PomdpLogging.StochasticInverse (14s)
+✔ [8931/8973] Built PomdpLogging.UniformChannel (14s)
+✔ [8932/8973] Built PomdpLogging.Episodes (13s)
+✔ [8933/8973] Built PomdpLogging.WeightedChannel (14s)
+✔ [8934/8973] Built PomdpLogging.BeliefCoverage (14s)
+⚠ [8935/8973] Built PomdpLogging.ThreeSymbol (14s)
+warning: PomdpLogging/ThreeSymbol.lean:54:27: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [8936/8973] Built PomdpLogging.Coarsening (14s)
+✔ [8937/8973] Built PomdpLogging.FullDataLowerBound (14s)
+✔ [8938/8973] Built PomdpLogging.Futures (15s)
+⚠ [8939/8973] Built PomdpLogging.Reconstruction (15s)
+warning: PomdpLogging/Reconstruction.lean:72:27: `if_pos` has been deprecated: Use `ite_eq_left` instead
+✔ [8940/8973] Built PomdpLogging.TestingEstimator (14s)
+✔ [8941/8973] Built PomdpLogging.Information (14s)
+✔ [8942/8973] Built PomdpLogging.OutcomeProbability (15s)
+⚠ [8943/8973] Built PomdpLogging.SufficientChannel (14s)
+warning: PomdpLogging/SufficientChannel.lean:23:6: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: PomdpLogging/SufficientChannel.lean:29:8: Variable name `s` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _s
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8944/8973] Built PomdpLogging.ProductInformation (15s)
+✔ [8945/8973] Built PomdpLogging.LogSum (15s)
+✔ [8946/8973] Built PomdpLogging.StageConsistency (15s)
+⚠ [8947/8973] Built PomdpLogging.RevealingEvent (15s)
+warning: PomdpLogging/RevealingEvent.lean:64:82: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: PomdpLogging/RevealingEvent.lean:64:82: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [8948/8973] Built PomdpLogging.ProductCompression (15s)
+✔ [8949/8973] Built PomdpLogging.Affinity (15s)
+✔ [8950/8973] Built PomdpLogging.ModelSemantics (15s)
+✔ [8951/8973] Built PomdpLogging.UniformRevealing (15s)
+⚠ [8952/8973] Built PomdpLogging.MemoryObstructions (15s)
+warning: PomdpLogging/MemoryObstructions.lean:70:44: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [memoryMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8953/8973] Built PomdpLogging.TestingInformation (16s)
+✔ [8954/8973] Built PomdpLogging.ProductReconstruction (16s)
+⚠ [8955/8973] Built PomdpLogging.Majority (16s)
+warning: PomdpLogging/Majority.lean:113:45: This simp argument is unused:
+  not_lt.mpr hs.le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [majorityDecision, hs, ne_of_gt hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8956/8973] Built PomdpLogging.DeterministicVariant (16s)
+✔ [8957/8973] Built PomdpLogging.BoundaryLayers (16s)
+✔ [8958/8973] Built PomdpLogging.SuffixDistances (16s)
+⚠ [8959/8973] Built PomdpLogging.FirstReset (16s)
+warning: PomdpLogging/FirstReset.lean:20:17: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: PomdpLogging/FirstReset.lean:34:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: PomdpLogging/FirstReset.lean:65:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: PomdpLogging/FirstReset.lean:70:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: PomdpLogging/FirstReset.lean:95:18: This simp argument is unused:
+  allHold
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [continuationMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8960/8973] Built PomdpLogging.WeightedRevealing (16s)
+✔ [8961/8973] Built PomdpLogging.ExactLowerBound (16s)
+✔ [8962/8973] Built PomdpLogging.FullDataMinimax (16s)
+⚠ [8963/8973] Built PomdpLogging.DeterministicRisk (15s)
+warning: PomdpLogging/DeterministicRisk.lean:30:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8964/8973] Built PomdpLogging.DeterministicCompression (16s)
+⚠ [8965/8973] Built PomdpLogging.MatrixForms (15s)
+warning: PomdpLogging/MatrixForms.lean:19:10: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [(hd i).ne', Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: PomdpLogging/MatrixForms.lean:19:45: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.diagonal_apply, (hd i).ne']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: PomdpLogging/MatrixForms.lean:20:10: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hij, Matrix.one_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: PomdpLogging/MatrixForms.lean:20:38: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.diagonal_apply, hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8966/8973] Built PomdpLogging.CompactOutcome (16s)
+⚠ [8967/8973] Built PomdpLogging.SampleComplexity (15s)
+warning: PomdpLogging/SampleComplexity.lean:41:31: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: PomdpLogging/SampleComplexity.lean:47:31: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+✔ [8968/8973] Built PomdpLogging.DeterministicEstimation (15s)
+✔ [8969/8973] Built PomdpLogging.CompactCardinality (15s)
+✔ [8970/8973] Built PomdpLogging.UniformRate (14s)
+✔ [8971/8973] Built PomdpLogging.MainTheorem (14s)
+✔ [8972/8973] Built PomdpLogging (14s)
+Build completed successfully (8973 jobs).
+Axiom audit passed: 1040 project declarations, 688 theorems. Allowed dependencies: propext, Classical.choice, Quot.sound.
+'PomdpLogging.main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.exact_estimation_sample_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.exact_full_data_minimax' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.exact_sample_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.uniform_sample_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.compact_preserves_grams' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.deterministic_exact_minimax' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.deterministic_totalVariation' depends on axioms: [propext, Classical.choice, Quot.sound]

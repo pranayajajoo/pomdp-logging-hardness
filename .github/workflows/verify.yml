@@ -1,0 +1,46 @@
+name: Lean verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Build proofs and audit axioms
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Verify source checksums
+        run: python3 scripts/package.py --check
+
+      - name: Install pinned Lean and mathlib
+        run: sh setup.sh
+
+      - name: Build every module and audit every project declaration
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p .verification
+          sh check.sh 2>&1 | tee .verification/lean-verification.log
+
+      - name: Save verification log
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: lean-verification-${{ github.sha }}
+          path: .verification/lean-verification.log
+          if-no-files-found: ignore
+          retention-days: 30

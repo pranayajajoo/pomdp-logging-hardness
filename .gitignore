@@ -1,0 +1,11 @@
+.lake/
+.tools/
+*.olean
+*.ilean
+*.log
+!clean-build.log
+.verification/
+dist/
+__pycache__/
+*.pyc
+.DS_Store

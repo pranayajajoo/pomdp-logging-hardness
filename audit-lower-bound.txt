@@ -1,0 +1,4 @@
+'PomdpLogging.actual_uniform_revealing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.actual_weighted_revealing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.full_dataset_kl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PomdpLogging.exact_estimation_sample_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
